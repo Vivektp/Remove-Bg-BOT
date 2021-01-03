@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# (c) Shrimadhav U K
+# (c) VIVEK TVP
 
 import json
 import os
@@ -91,8 +91,8 @@ def rate(bot, update):
         chat_id=update.message.chat_id,
         disable_web_page_preview=True,
         reply_to_message_id=update.message.message_id,
-        text="""If you like me, please give 5 star ⭐️⭐️⭐️⭐️⭐️ rating at: https://t.me/tlgrmcbot?start=Remove_BGBot-bot
-You can also recommend me @Remove_BGBot to your friends.
+        text="""If you like me, please give 5 star ⭐️⭐️⭐️⭐️⭐️ rating at: https://t.me/tlgrmcbot?start=Your-Bot-User-Name-bot
+You can also recommend me to your friends.
 Have a nice day!"""
     )
 
@@ -102,13 +102,13 @@ def donate(bot, update):
     TRChatBase(update.message.chat_id, update.message.text, "donate")
     inline_keyboard = []
     inline_keyboard.append([
-        InlineKeyboardButton(text="Use Google Pay", url="https://g.co/payinvite/p48pZ")
+        InlineKeyboardButton(text="PAYTM", url="https://t.me/VIVEKTVP")
     ])
     inline_keyboard.append([
-        InlineKeyboardButton(text="Use PhonePe", url="https://phon.pe/ru_shri636w3")
+        InlineKeyboardButton(text="PHONE PAY", url="https://t.me/VIVEKTVP")
     ])
     inline_keyboard.append([
-        InlineKeyboardButton(text="Donate to Developer", url="https://donate.shrimadhavuk.me")
+        InlineKeyboardButton(text="Donate to Developer", url="https://t.me/VIVEKTVP")
     ])
     reply_markup = InlineKeyboardMarkup(inline_keyboard)
     bot.send_message(
